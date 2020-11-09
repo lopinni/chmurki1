@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"> 
+  
+    <head>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    </head>
+
+    <style>
+
+        .container {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+    </style>
+
+    <body>
+
+        <div>
+            
+            <h1 style="text-align: center;"> Czas na świecie </h1>
+
+            <div class="container">
+                <h4>Lublin</h4>
+                <hr>
+                <script>
+                    document.write(new Date().toLocaleString('pl-PL',{ timeZone: 'Europe/Warsaw' }));
+                </script>
+            </div>
+
+            <div class="container">
+                <h4>Nowy York</h4>
+                <hr>
+                <script>
+                    document.write(new Date().toLocaleString('en-US',{ timeZone: 'America/New_York' }));
+                </script>
+            </div>
+
+            <div class="container">
+                <h4>Sydney</h4>
+                <hr>
+                <script>
+                    document.write(new Date().toLocaleString('en-AU',{ timeZone: 'Australia/Sydney' }));
+                </script>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
